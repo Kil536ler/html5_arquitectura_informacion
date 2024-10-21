@@ -8,11 +8,11 @@
     <title>Primer reto|MuayThai</title>
   </head>
   <body>
-    <header style="color: red; text-align: center">
+    <header>
       <h1>Muay Thai: El Arte de los Ocho Miembros</h1>
       <p>Descubre la historia, las técnicas y los beneficios del Muay Thai</p>
     </header>
-    <nav id="menu_enlaces_pag" style="text-align: center">
+    <nav id="menu_enlaces_pag">
       <a href="#historia">Historia</a>
       <a href="#beneficios">Beneficios</a>
       <a href="#tecnicas">Técnicas Básicas</a>
@@ -36,11 +36,9 @@
         flexibilidad. Es un entrenamiento de cuerpo completo que te mantiene en
         forma.
       </p>
-      <section>
-        <img src="fotos/cardio" alt="mejora cardiobascular" />
-        <img src="fotos/fuerza" alt="fuerza" />
-        <img src="fotos/flexibilidad" alt="flexibilidad" />
-      </section>
+      <img src="fotos/cardio" alt="mejora cardiobascular" />
+      <img src="fotos/fuerza" alt="fuerza" />
+      <img src="fotos/flexibilidad" alt="flexibilidad" />
       <h3>Disciplina Mental</h3>
       <p>
         Este deporte requiere concentración y enfoque. Ayuda a desarrollar la
@@ -71,9 +69,26 @@
         distancia para atacar y abrir cortes en el oponente.
       </p>
     </section>
-
     <footer>
-      <p>Muay Thai - © 2024 | Todos los derechos reservados</p>
+      <h2>Informacion de contacto</h2>
+      <form id="form_contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="Asunto" required /><br /><br />
+        <label for="comentarios">Comentarios:</label><br />
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+      <p>Izan Muñoz - © 2024 | Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
